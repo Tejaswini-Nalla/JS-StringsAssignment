@@ -8,7 +8,6 @@ function reverse(string) {
 
 function reverseWords(string) {
     let words = string.split(" ");
-    console.log(words);
     let reversedWords = [];
     for(let index = 0; index < words.length; index++) {
         reversedWords = reversedWords.concat(reverse(words[index]));
@@ -18,6 +17,7 @@ function reverseWords(string) {
 
 function main() {
     console.log("String 'hello world' After reversing words",reverseWords("hello world"));
+    console.log("String '+-- --+' After reversing words",reverseWords("+-- --+"));
 }
 
 main()
