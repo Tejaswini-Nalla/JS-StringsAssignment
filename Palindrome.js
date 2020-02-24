@@ -13,7 +13,11 @@ function isPalindrome(string) {
 }
 
 function main() {
-    console.log("Is madam Palindrome or not ?",isPalindrome("madam"));
+    console.log("Is 'madam' Palindrome or not ?",isPalindrome("madam"));
+    console.log("Is 'abcd' Palindrome or not?",isPalindrome("abcd"));
+    console.log("Is 'a' Palindrome or not ?",isPalindrome("a"));
+    console.log("Is 'Madam' Palindrome or not ?",isPalindrome("Madam"));
+    console.log("Is '' Palindrome or not ?",isPalindrome(""));
 }
 
 main()
