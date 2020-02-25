@@ -1,4 +1,6 @@
-import {areSameCharacters} from "./Palindrome";
+function areSameCharacters(character1, character2) {
+    return character1 === character2;
+}
 
 function strikeOut(text, strikingLetter) {
     //return text.replace(strikingLetter, '-');
