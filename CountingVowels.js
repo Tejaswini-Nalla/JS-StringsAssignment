@@ -1,14 +1,14 @@
-function countVowels(word) {
+function countVowels(text) {
     const vowelsRegex = /[aeiouAEIOU]/g;
-    const vowels = word.match(vowelsRegex);
-    if(vowels.length > 0) {
-        return vowels.length;
+    const vowelsInSentence = text.match(vowelsRegex);
+    if(vowelsInSentence == null) {
+        return 0;
     }
-    return 0;
+    return vowelsInSentence.length;
 }
 
 function main() {
-    console.log(countVowels("ApplE"));
+    console.log(countVowels("Apple is good For Health "));
 }
 
 main();
