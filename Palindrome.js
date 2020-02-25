@@ -1,4 +1,4 @@
-export function areSameCharacters(character1, character2) {
+function areSameCharacters(character1, character2) {
     return character1 == character2;
 }
 
@@ -21,3 +21,5 @@ function main() {
 }
 
 main();
+
+module.exports = {areSameCharacters};
