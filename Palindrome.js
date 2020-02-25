@@ -1,4 +1,4 @@
-function areSameCharacters(character1, character2) {
+export function areSameCharacters(character1, character2) {
     return character1 == character2;
 }
 
@@ -20,4 +20,4 @@ function main() {
     console.log("Is '' Palindrome or not ?",isPalindrome(""));
 }
 
-main()
+main();

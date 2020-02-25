@@ -11,4 +11,4 @@ function main() {
     console.log("Reverse of 'hello':",reverse("hello"));
 }
 
-main()
+main();

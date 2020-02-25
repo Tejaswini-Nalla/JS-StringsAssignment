@@ -20,4 +20,4 @@ function main() {
     console.log("String '+-- --+' After reversing words",reverseWords("+-- --+"));
 }
 
-main()
+main();
