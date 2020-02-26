@@ -9,8 +9,8 @@ function reverse(string) {
 function reverseWords(string) {
     let words = string.split(" ");
     let reversedWords = [];
-    for(let index = 0; index < words.length; index++) {
-        reversedWords = reversedWords.concat(functions.reverse(words[index]));
+    for (let index = 0; index < words.length; index++) {
+        reversedWords = reversedWords.concat(reverse(words[index]));
     }
     return reversedWords.join(" ");
 }

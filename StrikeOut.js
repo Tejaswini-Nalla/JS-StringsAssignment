@@ -11,13 +11,20 @@ function strikeOut(text, strikingLetter) {
         if(functions.areSameCharacters(text[index],strikingLetter)) {
             strikeOutText = strikeOutText.concat("-");
         }
-        strikeOutText = strikeOutText.concat(text[index]);
+        else {
+            strikeOutText = strikeOutText.concat(text[index]);
+        }
     }
     return strikeOutText;
 }
 
 function main() {
     console.log(strikeOut("hello fellow","l"));
+    console.log(strikeOut("hello","o"));
+    console.log(strikeOut("hello","h"));
+    console.log(strikeOut("hello","a"));
+    console.log(strikeOut("hello",""));
+    console.log(strikeOut("","a"));
     console.log(strikeOut("",""));
 }
 

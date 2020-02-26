@@ -1,6 +1,6 @@
 function uniqueLetterCount(sentence) {
-    const characterRegex = /[a-z]/gi;
-    let lettersInSentence = sentence.match(characterRegex);
+    const characterRegex = /[a-z]/g;
+    let lettersInSentence = sentence.toLowerCase().match(characterRegex);
     let uniqueLetters = [];
     for(let index = 0; index < lettersInSentence.length; index++) {
         if(!uniqueLetters.includes(lettersInSentence[index])) {
@@ -12,6 +12,8 @@ function uniqueLetterCount(sentence) {
 
 function main() {
     console.log(uniqueLetterCount("hello"));
+    console.log(uniqueLetterCount("heLlo"));
+    console.log(uniqueLetterCount("HeLo"));
     console.log(uniqueLetterCount("a,b,c"));
 }
 
