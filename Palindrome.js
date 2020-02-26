@@ -1,5 +1,5 @@
 function areSameCharacters(character1, character2) {
-    return character1 == character2;
+    return character1 === character2;
 }
 
 function isPalindrome(string) {
@@ -23,3 +23,4 @@ function main() {
 main();
 
 module.exports = {areSameCharacters};
+console.log(module.exports);

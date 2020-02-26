@@ -1,5 +1,5 @@
 const functions = require('./Palindrome.js');
-
+console.log(functions);
 /*function areSameCharacters(character1, character2) {
     return character1 === character2;
 }*/
