@@ -1,12 +1,17 @@
-function uniqueLetterCount(sentence) {
+function getLetters(sentence) {
     const characterRegex = /[a-z]/g;
-    let lettersInSentence = sentence.toLowerCase().match(characterRegex);
+    return sentence.toLowerCase().match(characterRegex);
+}
+
+function uniqueLetterCount(sentence) {
+    let lettersInSentence = getLetters(sentence);
     let uniqueLetters = [];
-    for(let index = 0; index < lettersInSentence.length; index++) {
-        if(!uniqueLetters.includes(lettersInSentence[index])) {
-            uniqueLetters.push(lettersInSentence[index]);
+    const checkUniqueLetter = function(letter) {
+        if(!uniqueLetters.includes(letter)) {
+            uniqueLetters.push(letter);
         }
     }
+    lettersInSentence.forEach(checkUniqueLetter);
     return uniqueLetters.length
 }
 
