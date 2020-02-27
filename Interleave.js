@@ -1,6 +1,6 @@
-function interleave(text, stringToBeInserted) {
+function interleave(text, seperator) {
     let letters = text.split("");
-    return letters.join(stringToBeInserted);
+    return letters.join(seperator);
 }
 
 function main() {

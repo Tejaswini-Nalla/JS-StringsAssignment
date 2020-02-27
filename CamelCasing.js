@@ -1,5 +1,6 @@
 function getTitleCase(word) {
-    return word[0].toUpperCase().concat(word.slice(1));
+    let titleCasedWord = word.toLowerCase();
+    return titleCasedWord[0].toUpperCase().concat(titleCasedWord.slice(1));
 }
 
 function camelCase(words) {
@@ -12,7 +13,7 @@ function camelCase(words) {
 }
 
 function main() {
-    console.log("CamelCase Notation of words ['hi','good', 'morning']",camelCase(['hi','good', 'morning']));
+    console.log("CamelCase Notation of words ['hi','goOd', 'morning']",camelCase(['hi','goOd', 'morNIng']));
 }
 
 main();

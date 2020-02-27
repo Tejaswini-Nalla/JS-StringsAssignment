@@ -15,6 +15,7 @@ function main() {
     console.log(uniqueLetterCount("heLlo"));
     console.log(uniqueLetterCount("HeLo"));
     console.log(uniqueLetterCount("a,b,c"));
+    console.log(uniqueLetterCount("apPLe is"));
 }
 
 main();

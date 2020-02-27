@@ -9,7 +9,7 @@ function countVowels(text) {
 
 function main() {
     console.log(countVowels("Apple is good For Health "));
-    console.log(countVowels("AEioU "));
+    console.log(countVowels("peel"));
 }
 
 main();
