@@ -1,5 +1,5 @@
 function reverseWordOrder(string) {
-    return string.split(" ").reverse().join(" ");
+    return string.split(" ").reverse().join(" ")
 }
 
 function main() {
