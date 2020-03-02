@@ -1,9 +1,6 @@
 function wordFrequency(text, word) {
-    let count = 0;
-    let wordsInText = text.split(" ");
-    const areSameWords = element => element == word;
-    count = wordsInText.filter(areSameWords).length;
-    return count;
+    return text.split(" ").filter(element =>
+                            element === word ).length;
 }
 
 function main() {
