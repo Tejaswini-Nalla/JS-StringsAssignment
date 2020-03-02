@@ -7,16 +7,13 @@ function reverse(string) {
 }
  
 function reverseWords(string) {
-    let words = string.split(" ");
-    let reversedWords = [];
-    for (let index = 0; index < words.length; index++) {
-        reversedWords = reversedWords.concat(reverse(words[index]));
-    }
-    return reversedWords.join(" ");
+    return string.split(" ").reduce((accumulator, word) =>
+                                accumulator.concat(reverse(word)).concat(" "),
+                                "").slice(0,string.length);
 }
 
 function main() {
-    console.log("String 'hello world' After reversing words",reverseWords("hello world"));
-    console.log("String '+-- --+' After reversing words",reverseWords("+-- --+"));
+    console.log(reverseWords("hello world"));
+    console.log(reverseWords("+-- --+"));
 }
 main();
