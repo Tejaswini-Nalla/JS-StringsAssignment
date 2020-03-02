@@ -1,6 +1,5 @@
 function interleave(text, seperator) {
-    let letters = text.split("");
-    return letters.join(seperator);
+    return text.split("").join(seperator);
 }
 
 function main() {

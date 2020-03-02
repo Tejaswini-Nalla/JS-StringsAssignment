@@ -1,26 +1,17 @@
-function getTitleCase(word, index) {
-    if(index === 0) {
-        return word.toLowerCase()
-    }
-    else {
-        let titleCasedWord = word.toLowerCase();
-        return titleCasedWord[0].toUpperCase().concat(titleCasedWord.slice(1));
-    }
+function getTitleCase(word) {
+        return word[0].toUpperCase().concat(word.slice(1).toLowerCase());
 }
 
 function camelCase(words) {
-    let result = words.map(getTitleCase);
-    return result.join("");
+    return words.slice(1).reduce((accumulator,word) =>
+                            accumulator.concat(getTitleCase(word)),
+                            words[0].toLowerCase());
+
 }
 
 function main() {
-    console.log("CamelCase Notation of words ['hi','goOd', 'morning']",camelCase(['hi','goOd', 'morNIng']));
+    console.log("CamelCase Notation of words ['Hi','goOd', 'morning']",camelCase(['Hi','goOd', 'morNIng']));
 }
 
 main();
 
-/*let result = words[0].toLowerCase();
-   for(let index = 1; index < words.length; index++) {
-       let titleCaseWord = getTitleCase(words[index]);
-       result = result.concat(titleCaseWord);
-   }*/
